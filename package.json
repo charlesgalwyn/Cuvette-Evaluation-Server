@@ -1,15 +1,23 @@
 {
-  "name": "quizzie-server",
+  "name": "quizee-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is the backend for Cuvette Test",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
-    "test": "nodemon index"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Charles Galwyn",
   "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
@@ -17,7 +25,6 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
-    "mongodb": "^6.2.0",
-    "mongoose": "^7.6.3"
+    "mongoose": "^8.1.0"
   }
 }
