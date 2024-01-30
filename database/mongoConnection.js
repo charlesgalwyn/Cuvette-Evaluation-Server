@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongoURL = process.env.DB_URL;
+const mongoURL = "mongodb+srv://charlesgalwyn:dani1998@cluster0.2zbr3si.mongodb.net/";
 
 const mongoCon = () =>{
     if(mongoURL){

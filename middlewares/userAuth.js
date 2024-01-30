@@ -9,7 +9,7 @@ const userAuth = (req, res, next) =>{
     }
 
     //verifying jwt token and access data
-    const user = jwt.verify(token, process.env.JWT_SECRET_KEY);
+    const user = jwt.verify(token, "dani1998");
     if(!user){
         return res.status(401).json({error: "Invalid jwt token"});
     }

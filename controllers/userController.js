@@ -64,7 +64,7 @@ exports.login = async (req, res) =>{
     }
 
     //generating jwt token for a user
-    const jwtToken = jwt.sign(user.toJSON(), process.env.JWT_SECRET_KEY);
+    const jwtToken = jwt.sign(user.toJSON(), "dani1998");
 
     res.status(200).json({
         success: true,
