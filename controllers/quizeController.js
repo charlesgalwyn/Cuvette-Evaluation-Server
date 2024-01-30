@@ -104,7 +104,7 @@ exports.getAllQuizes = async(req, res) =>{
             totalImpressions += quizes[i].impressions;
         }
 
-        const filteredQuizes = quizes.filter((q, i)=>q.impressions > 9)
+        const filteredQuizes = quizes.filter((q, i)=>q.impressions > 1)
 
         const sortedQuizes = filteredQuizes.sort((a, b)=> b.impressions - a.impressions)
 
