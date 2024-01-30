@@ -25,7 +25,7 @@ exports.createQuize = async(req, res) =>{
         const _id = new mongoose.Types.ObjectId();
 
         //generating URL
-        const URL = `http://localhost:5173/anonymous/${_id}`;
+        const URL = `https://beautiful-pasca-ffa1d9.netlify.app/anonymous/${_id}`;
 
 
         //creating new quize if all data is correct
