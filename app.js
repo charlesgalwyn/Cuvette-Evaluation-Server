@@ -12,7 +12,7 @@ app.use(express.json());
 
 
 app.use('/api/user', userRoutes);
-app.use('/api/quize', quizeRoutes);
+app.use('/api/quiz', quizeRoutes);
 
 app.use(errorHandler);
 
