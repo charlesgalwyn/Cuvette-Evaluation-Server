@@ -5,17 +5,8 @@ const userRoutes = require('./routes/userRoutes');
 const quizeRoutes = require('./routes/quizeRoutes');
 const errorHandler = require('./utils/errorHandler')
 
-// Enable CORS for some routes routes
-const allowedOrigins = ['http://localhost:5173', '*'];
 
-const corsOptions = {
-  origin: allowedOrigins,
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,
-  optionsSuccessStatus: 204,
-};
-
-app.use(cors(corsOptions));
+app.use(cors());
 
 //using middlewares
 app.use(express.json());

@@ -15,7 +15,7 @@ app.get('/health', (req, res)=>{
 })
 
 //Running the server if the port is given in the .env
-const port = process.env.PORT;
+const port = process.env.PORT || 4000;
 if(port){
     app.listen(port, ()=>{
         console.log("Server started on the port ", port)
