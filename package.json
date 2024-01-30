@@ -1,5 +1,5 @@
 {
-  "name": "quizee-backend",
+  "name": "cuvette-backend",
   "version": "1.0.0",
   "description": "This is the backend for Cuvette Test",
   "main": "index.js",
@@ -8,8 +8,15 @@
     "dev": "nodemon index.js",
     "start": "node index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlesgalwyn/Cuvette-Evaluation-Server.git"
+  },
   "author": "Charles Galwyn",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlesgalwyn/Cuvette-Evaluation-Server/issues"
+  },
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",

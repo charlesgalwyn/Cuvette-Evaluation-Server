@@ -1,20 +1,19 @@
-const express = require('express');
-const app = express();
-const cors = require('cors');
-const userRoutes = require('./routes/userRoutes');
-const quizeRoutes = require('./routes/quizeRoutes');
-const errorHandler = require('./utils/errorHandler')
+const app = require('./app');
+require('dotenv').config();
+const mongoCon = require('./database/mongoConnection');
 
+mongoCon();
 
-app.use(cors());
+app.get('/health', (req, res)=>{
+    res.status(200).json({
+        status: "Active",
+        message: "Server is working finely"
+    })
+})
 
-//using middlewares
-app.use(express.json());
-
-
-app.use('/api/user', userRoutes);
-app.use('/api/quiz', quizeRoutes);
-
-app.use(errorHandler);
-
-module.exports = app;
+const port = process.env.PORT;
+if(port){
+    app.listen(port, ()=>{
+        console.log("Server started on the port ", port)
+    })
+}
