@@ -25,7 +25,7 @@ exports.createQuize = async(req, res) =>{
         const _id = new mongoose.Types.ObjectId();
 
         //generating URL
-        const URL = `https://charlesgalwyn-gmail-com-cuvette-final-evaluation-june.vercel.app/anonymous/${_id}`;
+        const URL = `https://cuvette-quizzie.vercel.app/anonymous/${_id}`;
 
 
         //creating new quize if all data is correct
